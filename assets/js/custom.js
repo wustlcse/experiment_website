@@ -27,6 +27,101 @@ var custom = {
          *
          * returns: None
          */
+
+        var task_array = [
+            [
+                [
+                    "1. What’s the least costly appliance in terms of electricity cost?",
+                    "VCR",
+                    "Radio",
+                    "Rechargeable toothbrush",
+                    "LCD monitor"
+                ],
+                [
+                    "2. What’s the electricity cost difference between the most costly appliance and the least costly appliance (feel free to use a calculator)?",
+                    "210",
+                    "158.41",
+                    "76.47",
+                    "56.65"
+                ],
+                [
+                    "3. Computers cost approximately _____ more times than laptops (in terms of electricity cost; pick the best answer)?",
+                    "5",
+                    "2",
+                    "0.1",
+                    "4"
+                ],
+                [
+                    "4. Rank the cost of the following appliance from lowest to highest electricity cost: Cordless phone base station, LCD monitor, Convection microwave, Rechargeable toothbrush.",
+                    "Rechargeable toothbrush < LCD monitor < Cordless phone base station < Convection microwave",
+                    "Cordless phone base station < LCD monitor < Rechargeable toothbrush < Convection microwave",
+                    "Cordless phone base station < LCD monitor < Convection microwave < Rechargeable toothbrush",
+                    "Convection microwave < Rechargeable toothbrush < Cordless phone base station < LCD monitor"
+                ],
+                [
+                    "5. Based on the info in this chart only, do you think the average electricity cost of appliances on active standby mode is higher or lower than the average electricity cost of those in passive standby mode?",
+                    "yes",
+                    "no"
+                ],
+
+            ],
+            [
+                [
+                    "1. Which Australian state has the third highest percentage of registered birth in the country?",
+                    "Victoria",
+                    "New South Wales",
+                    "Tasmania",
+                    "South Australia"
+                ],
+                [
+                    "2. The number of registered births in <b>New South Wales</b> is approximately equivalent to the combined number of registered births of which two other states? Select the best answer.",
+                    "Queensland and Western Australia",
+                    "Queensland and Victoria",
+                    "Queensland and Tasmania",
+                    "South Australia and Western Australia"
+                ],
+                [
+                    "3. The number of registered births in <b>Victoria</b> is approximately equivalent to the combined number of registered births of which two other states? Select the best answer.",
+                    "Queensland and Western Australia",
+                    "Western Australia and Tasmania",
+                    "Queensland and Tasmania",
+                    "South Australia and Western Australia"
+                ],
+                [
+                    "4. If we exclude and ignore the data of Western Australia, which state has the <b>second-lowest</b> number of registered births?",
+                    "Queensland",
+                    "South Australia",
+                    "Victoria",
+                    "Tasmania"
+                ],
+                [
+                    "5. Which of the following statement is correct?",
+                    "The state with the highest number of births has more registered births than all the other states combined",
+                    "South Australia has recorded more births than Western Australia in 2012",
+                    "Victoria and Queensland combined have recorded less birth than New South Wales in 2012",
+                    "None of above"
+                ]
+            ],
+            [
+
+            ],
+            [
+
+            ],
+            [
+
+            ],
+            [
+
+            ],
+            [
+
+            ],
+            [
+
+            ],
+        ];
+
         $(".exp-data").text("Input for task " + taskInput.toString());
 
         $('#instructions-demo2').empty();
@@ -35,8 +130,25 @@ var custom = {
         let instructionsIndex = taskIndex;
         let imgEle = "<img class='instructions-img' src='";
         imgEle += config.instructions.images[instructionsIndex] + "'></img>";
-        console.log(imgEle);
         $("#instructions-demo2").append($(imgEle));
+
+        let current_task_bundle = task_array[taskIndex];
+        for(let i = 0; i < current_task_bundle.length; ++i)
+        {
+            let current_question_bundle = current_task_bundle[i];
+            let current_question_name = current_question_bundle[0];
+            //console.log(current_question_name);
+            //console.log($('#questions_box').children().eq(i));
+            //console.log($('#questions_box').children().eq(i).find('label').first());
+            //console.log($('#questions_box ').children().eq(i).find(".radio"));
+
+            $('#questions_box').children().eq(i).find('label').first().html(current_question_name);
+            for(let j = 1; j < current_question_bundle.length; ++j)
+            {
+                $('#questions_box ').children().eq(i).find(".radio").eq(j-1).find('label').first().html(current_question_bundle[j]);
+            }
+        }
+
 
         //console.log("in showTask");
         //console.log(taskOutput);

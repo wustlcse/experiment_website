@@ -191,6 +191,11 @@ function setupButtons() {
     if (state.assignmentId == "ASSIGNMENT_ID_NOT_AVAILABLE") {
         $("#submit-button").remove();
     }
+    $('.ui.radio.checkbox')
+        .checkbox()
+    ;
+
+
 }
 
 /* MAIN */
