@@ -28,8 +28,18 @@ var custom = {
          * returns: None
          */
         $(".exp-data").text("Input for task " + taskInput.toString());
-        console.log("in showTask");
-        console.log(taskOutput);
+
+        $('#instructions-demo2').empty();
+        console.log("show vis");
+        console.log(taskIndex);
+        let instructionsIndex = taskIndex;
+        let imgEle = "<img class='instructions-img' src='";
+        imgEle += config.instructions.images[instructionsIndex] + "'></img>";
+        console.log(imgEle);
+        $("#instructions-demo2").append($(imgEle));
+
+        //console.log("in showTask");
+        //console.log(taskOutput);
         $("#exp-input").val(taskOutput);
         $("#exp-input").focus();
     },

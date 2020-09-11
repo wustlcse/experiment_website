@@ -82,17 +82,7 @@ function toggleInstructions() {
     if ($("#experiment").css("display") == "none") {
         $("#experiment").css("display", "flex");
         $("#instructions").css("display", "none");
-
         $("#sample-task2").css("display", "block");
-        if ($('#sample-task2').find('img').length) {
-
-        }else{
-            let instructionsIndex = 1;
-            let imgEle = "<img class='instructions-img' src='";
-            imgEle += config.instructions.images[instructionsIndex] + "'></img>";
-            $("#instructions-demo2").append($(imgEle));
-        }
-
         updateTask();
     } else {
         saveTaskData();
@@ -159,12 +149,12 @@ function submitHIT() {
 }
 
 function gup(name) {
-    console.log(name);
+    //console.log(name);
     var regexS = "[\\?&]"+name+"=([^&#]*)";
-    console.log(regexS);
+    //console.log(regexS);
     var regex = new RegExp( regexS );
     var tmpURL = window.location.href;
-    console.log(tmpURL);
+    //console.log(tmpURL);
     var results = regex.exec( tmpURL );
     if (results == null) return "";
     else return results[1];
