@@ -182,7 +182,7 @@ function populateMetadata(config) {
     if (config.instructions.images.length > 0) {
         $("#sample-task").css("display", "block");
         var instructionsIndex = Math.floor(Math.random() * config.instructions.images.length);
-        instructionsIndex = 1;
+        instructionsIndex = 2;
         var imgEle = "<img class='instructions-img' src='";
         imgEle += config.instructions.images[instructionsIndex] + "'></img>";
         $("#instructions-demo").append($(imgEle));
