@@ -171,10 +171,11 @@ function populateMetadata(config) {
     $(".disclaimer").html(config.meta.disclaimer);
     if (config.instructions.images.length > 0) {
         $("#sample-task").css("display", "block");
-        var instructionsIndex = Math.floor(Math.random() * config.instructions.images.length);
-        instructionsIndex = 2;
+        //var instructionsIndex = Math.floor(Math.random() * config.instructions.images.length);
+        //instructionsIndex = 2;
         var imgEle = "<img class='instructions-img' src='";
-        imgEle += config.instructions.images[instructionsIndex] + "'></img>";
+        //imgEle += config.instructions.images[instructionsIndex] + "'></img>";
+        imgEle += "https://datavizproject.com/wp-content/uploads/2015/10/Sk%C3%A6rmbillede-2017-08-31-kl.-17.24.32.png" + "'></img>";
         $("#instructions-demo").append($(imgEle));
 
     }

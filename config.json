@@ -2,12 +2,12 @@
     "meta": {
         "title": "Individual Differences and Charts",
         "description": "desc",
-        "numSubtasks": 8,
+        "numSubtasks": 4,
         "disclaimer": "This is a disclaimer. You are participating in this experiment voluntarily.",
         "aggregate": false
     },
     "instructions": {
-        "simple": "These are simple instructions for <b>8</b> tasks",
+        "simple": "These are simple instructions for <b>4</b> tasks",
         "steps": [
             "instruction1",
             "instruction2",
@@ -15,12 +15,8 @@
         ],
         "images": [
             "http://www.nigelholmes.com/site/wp-content/uploads/2016/09/vampire_energy.png",
-            "https://datavizproject.com/wp-content/uploads/2015/10/Sk%C3%A6rmbillede-2017-08-31-kl.-17.24.32.png",
             "https://images.squarespace-cdn.com/content/v1/50060e33c4aa3dba773634ec/1358646209834-5AR52B4XNUGB5BWZHHXM/ke17ZwdGBToddI8pDm48kHFg3lwAxHvaI5rSscPgwO17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmCav7cO2VoBczCEdPgI6OoSmGicwL8fqbB_GqpB601zPe83Az-mLcVHspvd7NmvFY/IncomeGuide_2013_Jan17_RGB_page+15_15.png?format=1500w",
-            "https://i.pinimg.com/564x/17/59/46/175946f20e0f27061ed25ee8849655e5.jpg",
             "https://i0.wp.com/www.johngrimwade.com/blog/wp-content/uploads/2016/09/virgins.jpg?w=1500&ssl=1",
-            "https://www.snd.org/wp-content/uploads/2015/01/medcosts.jpg",
-            "http://www.nigelholmes.com/site/wp-content/uploads/2020/02/the-national-mall.png",
             "https://datavizblog.files.wordpress.com/2013/10/beer-of-choice.png"
         ]
     },

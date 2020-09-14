@@ -60,69 +60,128 @@ var custom = {
                 ],
                 [
                     "5. Based on the info in this chart only, do you think the average electricity cost of appliances on active standby mode is higher or lower than the average electricity cost of those in passive standby mode?",
-                    "yes",
-                    "no"
+                    "Yes",
+                    "No",
+                    "Pears",
+                    "Grapefruit"
                 ],
 
             ],
             [
                 [
-                    "1. Which Australian state has the third highest percentage of registered birth in the country?",
-                    "Victoria",
-                    "New South Wales",
-                    "Tasmania",
-                    "South Australia"
+                    "1. Based on this visualization, a person who makes 25,000 US dollars in 2010 would be classified in which percentage bracket?",
+                    "Top 0.01%",
+                    "Top 10% to 5%",
+                    "Bottom 90%",
+                    "Top 5% to 1%",
                 ],
                 [
-                    "2. The number of registered births in <b>New South Wales</b> is approximately equivalent to the combined number of registered births of which two other states? Select the best answer.",
-                    "Queensland and Western Australia",
-                    "Queensland and Victoria",
-                    "Queensland and Tasmania",
-                    "South Australia and Western Australia"
+                    "2. Based on this visualization, a person who makes 25,000 US dollars in 2010 would be classified in which percentage bracket?",
+                    "Top 0.01%",
+                    "Top 10% to 5%",
+                    "Bottom 90%",
+                    "Top 5% to 1%",
                 ],
                 [
-                    "3. The number of registered births in <b>Victoria</b> is approximately equivalent to the combined number of registered births of which two other states? Select the best answer.",
-                    "Queensland and Western Australia",
-                    "Western Australia and Tasmania",
-                    "Queensland and Tasmania",
-                    "South Australia and Western Australia"
+                    "3. There is an income group with an average income of 30,000 US dollars. Based on this visualization, what percentage of people belong to this group?",
+                    "90%",
+                    "5%",
+                    "50%",
+                    "10%"
                 ],
                 [
-                    "4. If we exclude and ignore the data of Western Australia, which state has the <b>second-lowest</b> number of registered births?",
-                    "Queensland",
-                    "South Australia",
-                    "Victoria",
-                    "Tasmania"
+                    "4. Rank the following income groups, “Top 0.01%”, “Top 10% to 5%”, “Top 5% to 1%”,  based on each group’s percentage share of the total population.",
+                    "Top 0.01%” <  “Top 5% to 1%” < “Top 10% to 5%",
+                    "Top 0.01%” <  “Top 10% to 5%” < “Top 5% to 1%",
+                    "Top 10% to 5%” <  “Top 0.01%” < “Top 5% to 1%",
+                    "Top 5% to 1%” <  “Top 0.01%” < “Top 10% to 5%"
                 ],
                 [
-                    "5. Which of the following statement is correct?",
-                    "The state with the highest number of births has more registered births than all the other states combined",
-                    "South Australia has recorded more births than Western Australia in 2012",
-                    "Victoria and Queensland combined have recorded less birth than New South Wales in 2012",
-                    "None of above"
+                    "5. Rank the following income groups, “Top 0.01%”, “Top 10% to 5%”, “Top 5% to 1%”,  based on each’s percentage share of income.",
+                    "Top 0.01%” <  “Top 5% to 1%” < “Top 10% to 5%",
+                    "Top 10% to 5%” <  “Top 5% to 1%” < “Top 0.01%",
+                    "Top 5% to 1%” <  “Top 0.01%” < “Top 10% to 5%",
+                    "Top 10% to 5%” <  “Top 0.01%” < “Top 5% to 1%"
                 ]
             ],
             [
-
+                [
+                    "1. Based on the information from this visualization only, which year has the lowest percentage of female virgins on this college campus?",
+                    "1963",
+                    "1984",
+                    "1978",
+                    "1971"
+                ],
+                [
+                    "2. Based on the information from this visualization only, which year has the lowest percentage of male virgins on this college campus?",
+                    "1963",
+                    "1984",
+                    "1978",
+                    "1971"
+                ],
+                [
+                    "3. Based on the information from this visualization only, which year has the highest percentage of female and male virgins combined on this college campus?",
+                    "1963",
+                    "1984",
+                    "1978",
+                    "1971"
+                ],
+                [
+                    "4. Is it true that in all of the four years reported (namely, 1963, 1971, 1978 and 1984),the percentage of female virgins is higher than that of male virgins?",
+                    "apple",
+                    "fruit",
+                    "yes",
+                    "no"
+                ],
+                [
+                    "5. In which year is the gap between male virgin rate and female virgin rate the largest?",
+                    "1963",
+                    "1984",
+                    "1978",
+                    "1971"
+                ],
             ],
             [
+                [
+                    "1. Which beer brand is the top beer choice of Texas?",
+                    "Bud Light",
+                    "Blue Moon",
+                    "Yuengling",
+                    "Corona"
+                ],
+                [
+                    "2. Which beer brand is the top beer choice of Alaska?",
+                    "Bud Light",
+                    "Blue Moon",
+                    "Yuengling",
+                    "Corona"
+                ],
+                [
+                    "3. Which beer brand is not a top beer choice in any of the states in the western part of the United States?",
+                    "Bud Light",
+                    "Blue Moon",
+                    "Yuengling",
+                    "Corona"
+                ],
+                [
+                    "4. Which two beer brands are the top choices of Northwestern United States?",
+                    "Bud Light and Blue Moon",
+                    "Corona and Yuengling",
+                    "Yuengling and Samuel Adams ",
+                    "Samuel Adams and Corona",
 
-            ],
-            [
-
-            ],
-            [
-
-            ],
-            [
-
-            ],
-            [
-
-            ],
+                ],
+                [
+                    "5. Is it true that Blue Moon is the top choice of more states compared to Corona?",
+                    "Yes",
+                    "Juice",
+                    "No",
+                    "Ice"
+                ]
+            ]
         ];
 
-        $(".exp-data").text("Input for task " + taskInput.toString());
+        $(".exp-data").text("Type \"done\" in the input box to proceed (designed to distinguish participants who are not actually working on the tasks) for task " + taskInput.toString());
 
         $('#instructions-demo2').empty();
         console.log("show vis");
@@ -194,10 +253,10 @@ var custom = {
          *
          * returns: string indicating error message or falsey value
          */
-        if (taskOutput.trim().length > 0) {
+        if (taskOutput.trim().toLowerCase() === 'done') {
             return null;
         } else {
-            return "please complete the task!";
+            return "please complete the task and type \"done\" in the input box!";
         }
     }
 };
