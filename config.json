@@ -1,23 +1,35 @@
 {
     "meta": {
         "title": "Individual Differences and Charts",
-        "description": "desc",
+        "description": "Description",
         "numSubtasks": 4,
         "disclaimer": "This is a disclaimer. You are participating in this experiment voluntarily.",
         "aggregate": false
     },
     "instructions": {
-        "simple": "These are simple instructions for <b>4</b> tasks",
+        "simple": "Please complete <b>4</b> sets of questions with 4 different data visualizations, respectively. Choose one answer that is most correct for each question.  ",
+
         "steps": [
-            "instruction1",
-            "instruction2",
-            "instruction3"
+
         ],
-        "images": [
-            "http://www.nigelholmes.com/site/wp-content/uploads/2016/09/vampire_energy.png",
-            "https://images.squarespace-cdn.com/content/v1/50060e33c4aa3dba773634ec/1358646209834-5AR52B4XNUGB5BWZHHXM/ke17ZwdGBToddI8pDm48kHFg3lwAxHvaI5rSscPgwO17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmCav7cO2VoBczCEdPgI6OoSmGicwL8fqbB_GqpB601zPe83Az-mLcVHspvd7NmvFY/IncomeGuide_2013_Jan17_RGB_page+15_15.png?format=1500w",
-            "https://i0.wp.com/www.johngrimwade.com/blog/wp-content/uploads/2016/09/virgins.jpg?w=1500&ssl=1",
-            "https://datavizblog.files.wordpress.com/2013/10/beer-of-choice.png"
+        "images":
+        [
+            [
+                "http://www.nigelholmes.com/site/wp-content/uploads/2016/09/vampire_energy.png",
+                "assets/minimalists/Vampire_minimalist.png"
+            ],
+            [
+                "https://images.squarespace-cdn.com/content/v1/50060e33c4aa3dba773634ec/1358646209834-5AR52B4XNUGB5BWZHHXM/ke17ZwdGBToddI8pDm48kHFg3lwAxHvaI5rSscPgwO17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmCav7cO2VoBczCEdPgI6OoSmGicwL8fqbB_GqpB601zPe83Az-mLcVHspvd7NmvFY/IncomeGuide_2013_Jan17_RGB_page+15_15.png?format=1500w",
+                "assets/minimalists/treemap_minimalist-01.png"
+            ],
+            [
+                "https://i0.wp.com/www.johngrimwade.com/blog/wp-content/uploads/2016/09/virgins.jpg?w=1500&ssl=1",
+                "assets/minimalists/linechart_minimalist.png"
+            ],
+            [
+                "https://datavizblog.files.wordpress.com/2013/10/beer-of-choice.png",
+                "assets/minimalists/map_minimalist.png"
+            ]
         ]
     },
     "hitCreation": {

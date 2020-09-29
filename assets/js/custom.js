@@ -188,7 +188,7 @@ var custom = {
         console.log(taskIndex);
         let instructionsIndex = taskIndex;
         let imgEle = "<img class='instructions-img' src='";
-        imgEle += config.instructions.images[instructionsIndex] + "'></img>";
+        imgEle += config.instructions.images[instructionsIndex][Math.round(Math.random())] + "'></img>";
         $("#instructions-demo2").append($(imgEle));
 
         let current_task_bundle = task_array[taskIndex];
